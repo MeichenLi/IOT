@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 #import urllib.request
 
-#水果市场名称：a.opu_l2
+#name of the factory：a.opu_l2
 page = requests.get("https://price.21food.cn/product/990.html")
 soup = BeautifulSoup(page.content, 'html.parser')
 containers = soup.find('div', class_='sjs_top_cent_erv')
